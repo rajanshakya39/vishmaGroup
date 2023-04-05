@@ -1,0 +1,359 @@
+
+@media (max-width:1345px){
+    html{
+        font-size: 55%;
+    }
+
+    .card-holder{
+        min-height: 85vh;
+    }
+
+    .parallax .content{
+        padding: 4rem 27rem;
+    }
+
+   .parallax .content .textContent{
+         margin-top: 145px;
+   }
+}
+
+@media (max-width:1255px){
+    .card{
+        width: calc(86% - 10px);
+    }
+}
+
+@media (max-width:1230px){
+    html{
+        font-size: 55%;
+    }
+
+    .topbar{
+        padding: 0 4rem;
+    }
+
+    .main-nav {
+        padding: 1.75rem 4rem;
+    }
+
+    .main-nav .navlinks li{
+        margin-right: 3.15rem;
+    }
+
+    .parallax .content .textContent{
+        right: 26rem;
+        margin-top: 13rem;
+    }
+
+    .card-holder{
+        min-height: 80vh;
+    }
+
+    .card{
+        width: calc(95% - 10px);
+    }
+
+    .gridholder{
+        width: 85vw;
+    }
+
+    .gridholder .workbx{
+        height: 25rem;
+    }
+}
+
+@media (max-width:1060px){
+
+    .members h2{
+        margin: 4rem 0;
+    }
+
+    .card-holder{
+        grid-template-columns: repeat(2, 1fr);
+        min-height: 100vh;
+        grid-gap: 3rem 0rem;
+    }
+
+    .card{
+        width: calc(53% - 10px);
+    }
+}
+
+@media (max-width:1009px){
+    .animation-container{
+        min-height: 90vh;
+    }
+}
+
+@media (max-width:972px){
+    .footer .box-container .box:nth-child(3){
+        border-right: none;
+    }
+}
+
+@media (max-width:934px){
+    .card{
+        width: calc(60% - 5px);
+    }
+
+    .gridholder{
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 5em;
+    }
+
+    .gridholder .workbx{
+        height: 37rem;
+    }
+}
+
+@media (max-width:824px){
+    html{
+        font-size: 50%;
+    }
+
+    .topbar{
+        display: none;
+    }
+
+    .main-nav .navlinks{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        background: var(--white);
+        top: 9rem;
+        left: -30rem;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        transition: 0.3s ease-in;
+    }
+
+
+    .main-nav .navlinks li{
+        list-style: none;
+        padding: 0 2rem;
+        color: var(--white);
+        margin-right: 0rem;
+    }
+
+
+    .navlinks li a{
+        font-size: 2rem;
+        margin:2rem 2.5rem;
+        display: block;
+        text-align: center;
+
+    }
+    .main-nav .menubtn{
+        display: inline-block;
+    }
+
+    .slider-container .slider{
+        height: 300px;
+    }
+
+    .slider-container .slider .slides{
+        height: 300px;
+    }
+
+    .slider-container .slider .slides .slide img{
+        height: 300px;
+    }
+
+    .navigation-auto{
+        margin-top: 257px;
+    }
+
+    .parallax .content{
+        padding: 4rem 32rem;
+    }
+
+    .parallax .content .textContent{
+        right: 32rem;
+    }
+
+    .card{
+        width: calc(63% - 8px);
+    }
+
+}
+
+@media (max-width:770px){
+    .partner{
+        flex-direction: column;
+    }
+
+    .partner .partner-slider{
+        width: 82vw;
+    }
+}
+
+@media (max-width:730px){
+    .card-holder{
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0rem;
+        min-height: 180vh;
+    }
+
+    .card{
+        width: calc(35% - 5px);
+        height: 150px;
+    }
+
+    .card:hover{
+        height: 150px;
+    }
+
+    .teamImg{
+        width: 100px;
+        height: 100px;
+        top: -30%;
+    }
+
+    .card:hover .teamImg{
+        width: 100px;
+        height: 100px;
+   }
+    .card .teamContent{
+        align-items: flex-start;
+    }
+
+    .card .teamContent .details{
+        transform: translateY(6rem);
+        padding: 15px 30px;
+        margin-top: 1rem;
+    }
+
+
+.card:hover .teamContent .details{
+    transform: translateY(6rem);
+}
+
+    .card .teamContent .details .motto{
+        display: none;
+    }
+
+    .gridholder .workbx{
+        height: 33rem;
+    }
+
+    .animation-container{
+        min-height: 68vh;
+    }
+
+    .slogan{
+        margin-top: 2rem;
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width:672px){
+    .footer .box-container .box:nth-child(2){
+        border-right: none;
+    }
+
+    .footer .box-container .box:nth-child(3){
+        border-right: 2px solid var(--white);
+    }
+}
+
+
+@media (max-width:500px){
+
+    .parallax h2{
+        font-size: 4.4rem;
+    }
+
+    .members h2{
+        font-size: 4.4rem;
+    }
+    .card{
+        width: calc(45% - 5px);
+    }
+
+    .companies h2{
+        font-size: 4.4rem;
+    }
+}
+@media (max-width:500px){
+
+    html{
+        font-size: 45%;
+    }
+
+    .slider-container .slider{
+        width: 76vw;
+        height: 200px;
+    }
+
+    .slider-container .slider .slides{
+        height: 200px;
+    }
+
+    .slider-container .slider .slides .slide img{
+        height: 200px;
+    }
+
+    .navigation-manual{
+        margin-top: -23px;
+    }
+    .navigation-auto{
+        margin-top: 177px;
+    }
+    .parallax .content .imgbox::after{
+        width: 25rem;
+        height: 40rem;
+    }
+
+    .parallax .content .imgbox{
+        width: 25rem;
+        height: 40rem;
+    }
+
+    .parallax .content{
+        padding: 4rem 45rem;
+    }
+
+    .parallax .content .textContent{
+        right: 45rem;
+        max-width: 22rem;
+    }
+
+
+    .gridholder .workbx{
+        height: 30rem;
+    }
+
+    .gridholder{
+        grid-template-columns: repeat(1, 34rem);
+        grid-gap: 3em;
+        place-content: center;
+    }
+
+    .slogan{
+        background: var(--blue);
+        text-align: center;
+    }
+}
+
+@media (max-width:413px){
+
+    .card{
+        width: calc(55% - 5px);
+    }
+    .partner span{
+        font-size: 4rem;
+    }
+
+    .footer .box-container .box{
+        border-right: none;
+        border-bottom: 2px solid var(--white);
+    }
+
+    .footer .box-container .box:last-child{
+        border-bottom: none;
+    }
+
+    .footer .box-container .box:nth-child(3){
+        border-right: none;
+    }
+}
+

@@ -1,0 +1,1017 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Poppins&family=Roboto:wght@300&family=Ubuntu+Condensed&display=swap');
+
+:root {
+    --blue: #003594;
+    --red: #dd0c39;
+    --white: #fbfbfd;
+    --black: #000;
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    ;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+    background-color: #fbfbfd;
+}
+
+
+section {
+    margin-bottom: 1rem;
+}
+
+
+
+/* css for navbar starts here */
+/* css for topbar starts here */
+.navbar {
+    position: relative;
+    width: 100%;
+    color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    background-color: #fbfbfd;
+    z-index: 9999;
+    transition: 0.3s ease-in;
+}
+
+.navbar.active {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.topbar {
+    width: 100%;
+    background-color: var(--blue);
+    padding: 0 16rem;
+}
+
+.topbar.active {
+    display: none;
+}
+
+.topbar .left-topbar {
+    padding: 1em 0.5em;
+
+}
+
+.topbar .left-topbar div {
+    margin-right: 1.7rem;
+}
+
+.topbar .left-topbar div:last-child {
+    margin-right: 0;
+}
+
+.topbar .left-topbar .contact-container span {
+    display: block;
+    color: #FFF;
+    opacity: 0.8;
+}
+
+
+.topbar .left-topbar .contact-container span ion-icon {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #FFF;
+    cursor: pointer;
+}
+
+.topbar .left-topbar .contact-container .contact-no {
+
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.topbar .left-topbar .email-container span {
+    display: block;
+    color: #FFF;
+    opacity: 0.8;
+}
+
+.topbar .left-topbar .email-container .email {
+    font-weight: 400;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.topbar .left-topbar .email-container .email a {
+    color: #fff;
+}
+
+.topbar .left-topbar .address-container span {
+    display: block;
+    color: #FFF;
+    opacity: 0.8;
+}
+
+.topbar .left-topbar .address-container .address {
+    font-weight: 400;
+    padding-left: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.topbar .left-topbar .email-container span ion-icon {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.topbar .left-topbar .address-container span ion-icon {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+}
+
+.right-topbar span {
+    display: block;
+    color: #fff;
+    margin-right: 1.7rem;
+    opacity: 0.8;
+}
+
+.right-topbar span a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: 400;
+    text-transform: capitalize;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.right-topbar span a ion-icon {
+    font-size: 1.2rem;
+}
+
+.right-topbar span a:hover {
+    color: #4ac7ff;
+    font-weight: bolder;
+}
+
+.right-topbar span a:hover ion-icon {
+    color: var(--blue);
+    background-color: #fbfbfd;
+}
+
+.right-topbar span a:first-child {
+    font-size: 1.4rem;
+}
+
+.right-topbar span a ion-icon {
+    font-size: 1.7rem;
+}
+
+/* css for top navbar ends here */
+
+
+
+/* css for navbar ends here */
+
+/* css for main navbar starts here */
+
+.main-nav {
+    width: 100%;
+    padding: 1.75rem 17rem;
+    background-color: #fbfbfd;
+}
+
+.main-nav.active {
+    position: fixed;
+}
+
+.main-nav .navlinks {
+    color: #323232;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.main-nav .navlinks li {
+    list-style: none;
+    margin-right: 4.25rem;
+}
+
+.main-nav .navlinks.active {
+    left: 2rem;
+}
+
+
+.main-nav .menubtn {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+    padding: 1rem;
+    display: none;
+    cursor: pointer;
+    color: var(--blue);
+    background: var(--white);
+}
+
+.main-nav .menubtn ion-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 3rem;
+    width: 100%;
+    height: 100%;
+
+}
+
+.main-nav .menubtn.active {
+    background: var(--blue);
+    color: var(--white);
+}
+
+
+.main-nav .navlinks li:last-child {
+    margin-right: 0;
+}
+
+
+.main-nav .navlinks li a {
+    font-family: 'Poppins', 'sans-serif';
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.6rem;
+    color: #323232;
+}
+
+.main-nav .navlinks li a:hover {
+    color: var(--blue);
+    opacity: 1;
+    border-bottom: 1px solid var(--blue);
+}
+
+.rainbow-text {
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.rainbow-text .block-line>span {
+    display: inline-block;
+    font-family: 'Cinzel', serif;
+}
+
+span.block-line>span {
+    background-image: linear-gradient(90deg, #D504A6, #B601C8, #910AE3, #6B1DF6);
+    color: #0000;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: 'Cinzel', serif;
+}
+
+/* css for main navbar ends here */
+
+/* css for slider starts here */
+
+.slider-container {
+    position: relative;
+    width: 100%;
+}
+
+.slider-container .slider {
+    width: 78vw;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 2rem;
+}
+
+
+/* css for slider ends here */
+/* css for home section ends here */
+
+
+/* css for chairman intro stars here */
+
+.parallax {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.parallax .chairman {
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+.parallax .chairman:before {
+    content: url('Images/abstract-grey-wallpaper-14.jpg');
+    position: fixed;
+    width: 100%;
+    background-position: center center;
+    background-position: center;
+    background-size: cover;
+    background-color: #fbfbfd;
+    background-blend-mode: multiply;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.3;
+}
+
+.parallax .chairman .box {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    padding-top: 1.5rem;
+    background-color: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    overflow-y: hidden;
+}
+
+.parallax h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--blue);
+    padding: 0.1em 0.55em;
+    text-align: center;
+}
+
+.parallax .content {
+    position: relative;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4rem 17rem;
+}
+
+
+.parallax .content .imgbox {
+    position: relative;
+    width: 30rem;
+    height: 40rem;
+    /* overflow: hidden; */
+
+}
+
+.parallax .content .imgbox:after {
+    content: '';
+    width: 30rem;
+    height: 40rem;
+    background-color: var(--blue);
+    z-index: -1;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 0% 14% 0% 17% / 0% 109% -26% 17%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.parallax .content .imgbox img {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 55% 0% 14% 0% / 13% 0% 23% 0%;
+    ;
+}
+
+.parallax .content .textContent {
+    position: absolute;
+    right: 22%;
+    margin-top: 200px;
+    margin-bottom: 40px;
+    padding: 20px;
+    background: #fbfbfd;
+    /* transform: translateX(-22%); */
+    z-index: 1;
+    max-width: 30rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    border-bottom: 8px solid var(--blue);
+}
+
+.parallax .content .textContent ion-icon {
+    color: var(--blue);
+    font-size: 5rem;
+    font-weight: 600;
+    font-style: 'poppins', 'sans-serif';
+    margin-bottom: 0.5rem;
+}
+
+.parallax .content .textContent p {
+    width: 100%;
+    font-style: 'poppins', 'sans-serif';
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    color: #323232;
+    margin-bottom: 1rem;
+
+}
+
+
+.parallax .content .textContent span {
+    width: 100%;
+    font-style: 'poppins', 'sans-serif';
+    font-size: 1.5rem;
+    text-align: right;
+    font-weight: bold;
+    color: var(--blue);
+    text-transform: capitalize;
+}
+
+.parallax .content .textContent .post {
+    color: #323232;
+    font-size: 1.2rem;
+}
+
+
+/* css for chairman intro ends here */
+
+/* css for team card starts here */
+
+.members {
+    position: relative;
+    min-height: 100vh;
+    background: var(--blue);
+    z-index: 1;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.members h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    margin-top: 4rem;
+    padding: 0.3em 0.55em;
+    z-index: 1;
+    text-align: center;
+}
+
+.card-holder {
+    position: relative;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(4, 1fr);
+    width: 100%;
+    min-height: 90vh;
+}
+
+.holder {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    position: relative;
+    width: calc(80% - 10px);
+    height: 135px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 35px 80px rgba(0, 0, 0, 0.15);
+    transition: 0.2s ease-in;
+}
+
+.card:hover {
+    height: 350px;
+}
+
+.teamImg {
+    position: absolute;
+    left: 50%;
+    top: -40%;
+    transform: translateX(-50%);
+    width: 120px;
+    height: 120px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.35);
+    overflow: hidden;
+    transition: 0.2s ease-in;
+}
+
+.card:hover .teamImg {
+    width: 150px;
+    height: 150px;
+    top: -25%;
+}
+
+.teamImg img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card .teamContent {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+    overflow: hidden;
+
+}
+
+.card .teamContent .details {
+    padding: 10px 30px;
+    text-align: center;
+    width: 100%;
+    transition: 0.2s ease-in;
+    transform: translateY(18rem);
+}
+
+.card:hover .teamContent .details {
+    transform: translateY(-3.5rem);
+}
+
+.card .teamContent .details h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #323232;
+    line-height: 1.5em;
+    font-family: 'Cinzel', 'serif';
+    margin-bottom: 1rem;
+}
+
+.card .teamContent .details h1 span {
+    font-size: 0.75em;
+    color: #323232;
+    font-style: 'poppins', 'sans-serif';
+    font-weight: 900;
+
+}
+
+.card .teamContent .details .motto {
+    width: 100%;
+    padding: 0.4em 0.2em;
+    color: #555;
+    font-size: 1.5rem;
+}
+
+.card .teamContent .details .motto p {
+    text-align: center;
+}
+
+.card .teamContent .details .socialLinks {
+    width: 100%;
+    padding: 0.8em 1em;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+    margin-top: 1.2rem;
+}
+
+.card .teamContent .details .socialLinks span {
+    display: block;
+    position: relative;
+    width: 2rem;
+    height: 2rem;
+}
+
+.card .teamContent .details .socialLinks span a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-decoration: none;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card .teamContent .details .socialLinks span a ion-icon {
+    width: 100%;
+    height: 100%;
+    color: #323232;
+}
+
+.card .teamContent .details .socialLinks span a ion-icon:hover {
+    color: var(--white);
+    background-color: var(--blue);
+}
+
+/* css for team card ends here */
+
+/* css for companies starts here */
+
+.companies {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    background: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    margin-bottom: 0;
+}
+
+.companies h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    margin-top: 4rem;
+    padding: 0.3em 0.55em;
+    z-index: 1;
+    text-align: center;
+    color: var(--blue);
+}
+
+.gridholder {
+    display: grid;
+    background-color: var(--white);
+    width: 78vw;
+    grid-gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 1rem 2rem;
+    margin-bottom: 5rem;
+}
+
+.gridholder .workbx {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+}
+
+.gridholder .workbx .company-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(0);
+    transition: 0.5s ease-in-out;
+}
+
+.gridholder .workbx .company-img:hover {
+    transform: translateY(-100%);
+}
+
+.company-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gridholder .workbx .textbx {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--blue);
+    opacity: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(100%);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.gridholder .workbx:hover .textbx {
+    transform: translateY(0);
+}
+
+.gridholder .workbx .textbx h3 {
+    display: inline-block;
+    color: #fff;
+    font-size: 3rem;
+    text-align: center;
+    border-bottom: 2px solid var(--white);
+}
+
+.gridholder .workbx .textbx h3:hover {
+    color: #4ac7ff;
+    opacity: 1;
+}
+
+/* css for companies ends here */
+
+/* css for partner starts here */
+
+.partner {
+    position: relative;
+    background: var(--blue);
+    padding: 2rem 1rem;
+}
+
+.partner span {
+    font-family: 'Poppins', sans-serif;
+    font-size: 5rem;
+    color: var(--white);
+    padding: 0.1em 0.55em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.partner .partner-slider {
+    padding: 1rem;
+    width: 33vw;
+}
+
+.swiper {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.partner .partner-slider .box {
+    background: #fff;
+    padding: 3rem 2rem;
+    width: 3rem;
+    height: 7rem;
+}
+
+.partner .partner-slider .box img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* css for partners ends here */
+
+/* css for animation section starts here */
+
+.animBox {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    z-index: 1;
+    margin-bottom: 0;
+    /* background-color: #eaeaec; */
+    background-color: var(--white);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.wave {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.wave img {
+    width: 100%;
+}
+
+.animation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #893d3d00;
+}
+
+.animation-box {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+}
+
+.animation-box span {
+    position: absolute;
+    width: 8px;
+    height: 150px;
+    background: transparent;
+    border-bottom: 20px solid transparent;
+    transform-origin: bottom;
+    transform: rotate(calc(22.5deg * var(--i)));
+}
+
+.animation-box span::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 25px;
+    background: #03a9f4;
+    box-shadow: 0 0 20px #03a9f4;
+    border-radius: 10px;
+    animation: animate 1.2s linear infinite;
+    animation-delay: calc(0.1s * var(--i));
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(100px) rotate(0deg);
+        filter: hue-rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(0px);
+    }
+
+    100% {
+        transform: translateY(100px) rotate(360deg);
+        filter: hue-rotate(360deg);
+    }
+}
+
+/* .animation-box span::after{
+    content: '';
+    position: absolute;
+    /* bottom: 0;
+    width: 12px;
+    height: 6px;
+    background: #03a9f4;
+    /* transform-origin: bottom; */
+/* transform: rotate(2deg);
+    animation: animateColor 1.2s linear infinite;
+} */
+
+/* @keyframes animateColor{
+    0%{
+        filter: hue-rotate(0deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
+} */
+
+/* .animation-box span i{
+    position: absolute;
+    width: 8px;
+    height: 60px;
+    border-left: 2px solid #03a9f4;
+    border-right: 2px solid #03a9f4;
+    background: transparent;
+    transform-origin: top;
+    transform: rotate(78deg);
+    animation: animateColor 1.2s linear infinite;
+}
+
+/* css for animation ends here */
+
+/* css for slogan starts */
+
+.slogan {
+    position: absolute;
+    bottom: 3%;
+    display: block;
+    font-size: 3rem;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 0.5em 0.75em;
+    z-index: 2;
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, .37);
+
+}
+
+.slogan h1 {
+    text-decoration: none;
+    font-family: 'Cinzel', serif;
+    color: var(--white);
+}
+
+/* css for slogan ends */
+
+
+.footer {
+    position: relative;
+    background: var(--blue);
+    width: 100%;
+    margin-bottom: 0;
+    padding: 1.5em;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding: 0 1.5rem;
+}
+
+.footer .box-container .box {
+    position: relative;
+    border-right: 2px solid var(--white);
+}
+
+.footer .box-container .box:last-child {
+    border-right: none;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i {
+    color: var(--blue);
+}
+
+.footer .box-container .box .links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .links i {
+    color: var(--white);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover {
+    color: #4ac7ff;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+    color: #4ac7ff;
+}
+
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a {
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: .5rem;
+    font-size: 2rem;
+    color: var(--white);
+    margin-right: .2rem;
+    background: var(--blue);
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover {
+    background: var(--white);
+    color: var(--blue);
+}
+
+.footer .box-container .box .company-links {
+    display: block;
+    font-size: 1.5rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .company-links:hover {
+    color: #4ac7ff;
+}
+
+
+
+.footer .credit {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 2rem;
+    color: var(--white);
+    border-top: 1px solid var(--white);
+}
+
+.footer .credit span {
+    color: var(--white);
+}
+
+/* css for footer section ends here */
